@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+venv/
+.venv/
+env/
+.env/
+
+# VSCode project settings
+.vscode/
+
+# PyCharm project settings
+.idea/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+
+# Distribution / packaging
+*.whl
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Other caches
+.pyre/
+.pytype/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore data/output folders (optional if you generate files during training)
+data/
+output/
+results/
+logs/
+
+# Ignore model checkpoints (optional)
+*.pth
+*.ckpt
+*.h5
+
+# Ignore shap analysis output (if any)
+*.json
+*.npy
+mc_graph_shap_results/
+shap_results/
+
+# Ignore backups or crash reports
+*.orig
+*.rej
+
+# Ignore markdown temp files
+*.md~
+
+# Ignore Visual Studio temporary files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

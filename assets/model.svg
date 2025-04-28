@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="368pt" height="570pt" viewBox="0.00 0.00 368.00 569.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 565.6)">
+<title>GraphFourierNet</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-565.6 364,-565.6 364,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_fourier</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M20,-222C20,-222 170,-222 170,-222 176,-222 182,-228 182,-234 182,-234 182,-504.4 182,-504.4 182,-510.4 176,-516.4 170,-516.4 170,-516.4 20,-516.4 20,-516.4 14,-516.4 8,-510.4 8,-504.4 8,-504.4 8,-234 8,-234 8,-228 14,-222 20,-222"/>
+<text text-anchor="middle" x="95" y="-499.8" font-family="Times,serif" font-size="14.00">Fourier Encoding</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_graph_learning</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M202,-221.6C202,-221.6 340,-221.6 340,-221.6 346,-221.6 352,-227.6 352,-233.6 352,-233.6 352,-504.8 352,-504.8 352,-510.8 346,-516.8 340,-516.8 340,-516.8 202,-516.8 202,-516.8 196,-516.8 190,-510.8 190,-504.8 190,-504.8 190,-233.6 190,-233.6 190,-227.6 196,-221.6 202,-221.6"/>
+<text text-anchor="middle" x="271" y="-500.2" font-family="Times,serif" font-size="14.00">Dynamic Graph Learning</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_gat</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M138,-136.8C138,-136.8 230,-136.8 230,-136.8 236,-136.8 242,-142.8 242,-148.8 242,-148.8 242,-201.6 242,-201.6 242,-207.6 236,-213.6 230,-213.6 230,-213.6 138,-213.6 138,-213.6 132,-213.6 126,-207.6 126,-201.6 126,-201.6 126,-148.8 126,-148.8 126,-142.8 132,-136.8 138,-136.8"/>
+<text text-anchor="middle" x="184" y="-197" font-family="Times,serif" font-size="14.00">GAT Propagation</text>
+</g>
+<!-- Input_Data -->
+<g id="node1" class="node">
+<title>Input_Data</title>
+<path fill="lightblue" stroke="black" d="M147.37,-561.6C147.37,-561.6 42.63,-561.6 42.63,-561.6 36.63,-561.6 30.63,-555.6 30.63,-549.6 30.63,-549.6 30.63,-536.8 30.63,-536.8 30.63,-530.8 36.63,-524.8 42.63,-524.8 42.63,-524.8 147.37,-524.8 147.37,-524.8 153.37,-524.8 159.37,-530.8 159.37,-536.8 159.37,-536.8 159.37,-549.6 159.37,-549.6 159.37,-555.6 153.37,-561.6 147.37,-561.6"/>
+<text text-anchor="middle" x="95" y="-546.8" font-family="Arial" font-size="12.00">Input: Node Features</text>
+<text text-anchor="middle" x="95" y="-532.4" font-family="Arial" font-size="12.00">[B × N × T × F]</text>
+</g>
+<!-- Fourier_Embedding -->
+<g id="node2" class="node">
+<title>Fourier_Embedding</title>
+<path fill="lightblue" stroke="black" d="M143.7,-483.6C143.7,-483.6 46.3,-483.6 46.3,-483.6 40.3,-483.6 34.3,-477.6 34.3,-471.6 34.3,-471.6 34.3,-459.6 34.3,-459.6 34.3,-453.6 40.3,-447.6 46.3,-447.6 46.3,-447.6 143.7,-447.6 143.7,-447.6 149.7,-447.6 155.7,-453.6 155.7,-459.6 155.7,-459.6 155.7,-471.6 155.7,-471.6 155.7,-477.6 149.7,-483.6 143.7,-483.6"/>
+<text text-anchor="middle" x="95" y="-462" font-family="Arial" font-size="12.00">Feature Embedding</text>
+</g>
+<!-- Input_Data&#45;&gt;Fourier_Embedding -->
+<g id="edge1" class="edge">
+<title>Input_Data-&gt;Fourier_Embedding</title>
+<path fill="none" stroke="black" d="M95,-524.67C95,-515.98 95,-505.27 95,-495.43"/>
+<polygon fill="black" stroke="black" points="98.5,-495.55 95,-485.55 91.5,-495.55 98.5,-495.55"/>
+</g>
+<!-- Real_FFT -->
+<g id="node3" class="node">
+<title>Real_FFT</title>
+<path fill="lightblue" stroke="black" d="M153.02,-411.2C153.02,-411.2 36.98,-411.2 36.98,-411.2 30.98,-411.2 24.98,-405.2 24.98,-399.2 24.98,-399.2 24.98,-387.2 24.98,-387.2 24.98,-381.2 30.98,-375.2 36.98,-375.2 36.98,-375.2 153.02,-375.2 153.02,-375.2 159.02,-375.2 165.02,-381.2 165.02,-387.2 165.02,-387.2 165.02,-399.2 165.02,-399.2 165.02,-405.2 159.02,-411.2 153.02,-411.2"/>
+<text text-anchor="middle" x="95" y="-389.6" font-family="Arial" font-size="12.00">Real Fourier Transform</text>
+</g>
+<!-- Fourier_Embedding&#45;&gt;Real_FFT -->
+<g id="edge2" class="edge">
+<title>Fourier_Embedding-&gt;Real_FFT</title>
+<path fill="none" stroke="black" d="M95,-447.2C95,-439.87 95,-431.14 95,-422.9"/>
+<polygon fill="black" stroke="black" points="98.5,-422.92 95,-412.92 91.5,-422.92 98.5,-422.92"/>
+</g>
+<!-- Fourier_Graph_Conv -->
+<g id="node4" class="node">
+<title>Fourier_Graph_Conv</title>
+<path fill="lightblue" stroke="black" d="M161.7,-339.2C161.7,-339.2 28.3,-339.2 28.3,-339.2 22.3,-339.2 16.3,-333.2 16.3,-327.2 16.3,-327.2 16.3,-314.4 16.3,-314.4 16.3,-308.4 22.3,-302.4 28.3,-302.4 28.3,-302.4 161.7,-302.4 161.7,-302.4 167.7,-302.4 173.7,-308.4 173.7,-314.4 173.7,-314.4 173.7,-327.2 173.7,-327.2 173.7,-333.2 167.7,-339.2 161.7,-339.2"/>
+<text text-anchor="middle" x="95" y="-324.4" font-family="Arial" font-size="12.00">Fourier Graph Convolution</text>
+<text text-anchor="middle" x="95" y="-310" font-family="Arial" font-size="12.00">(Complex MLP)</text>
+</g>
+<!-- Real_FFT&#45;&gt;Fourier_Graph_Conv -->
+<g id="edge3" class="edge">
+<title>Real_FFT-&gt;Fourier_Graph_Conv</title>
+<path fill="none" stroke="black" d="M95,-374.8C95,-367.58 95,-359 95,-350.87"/>
+<polygon fill="black" stroke="black" points="98.5,-351 95,-341 91.5,-351 98.5,-351"/>
+</g>
+<!-- Inverse_FFT -->
+<g id="node5" class="node">
+<title>Inverse_FFT</title>
+<path fill="lightblue" stroke="black" d="M161.35,-266C161.35,-266 30.65,-266 30.65,-266 24.65,-266 18.65,-260 18.65,-254 18.65,-254 18.65,-242 18.65,-242 18.65,-236 24.65,-230 30.65,-230 30.65,-230 161.35,-230 161.35,-230 167.35,-230 173.35,-236 173.35,-242 173.35,-242 173.35,-254 173.35,-254 173.35,-260 167.35,-266 161.35,-266"/>
+<text text-anchor="middle" x="96" y="-244.4" font-family="Arial" font-size="12.00">Inverse Fourier Transform</text>
+</g>
+<!-- Fourier_Graph_Conv&#45;&gt;Inverse_FFT -->
+<g id="edge4" class="edge">
+<title>Fourier_Graph_Conv-&gt;Inverse_FFT</title>
+<path fill="none" stroke="black" d="M95.25,-301.93C95.36,-294.56 95.48,-285.82 95.6,-277.6"/>
+<polygon fill="black" stroke="black" points="99.1,-277.69 95.74,-267.64 92.1,-277.59 99.1,-277.69"/>
+</g>
+<!-- GAT_Layers -->
+<g id="node10" class="node">
+<title>GAT_Layers</title>
+<path fill="lightblue" stroke="black" d="M221.67,-180.8C221.67,-180.8 146.33,-180.8 146.33,-180.8 140.33,-180.8 134.33,-174.8 134.33,-168.8 134.33,-168.8 134.33,-156.8 134.33,-156.8 134.33,-150.8 140.33,-144.8 146.33,-144.8 146.33,-144.8 221.67,-144.8 221.67,-144.8 227.67,-144.8 233.67,-150.8 233.67,-156.8 233.67,-156.8 233.67,-168.8 233.67,-168.8 233.67,-174.8 227.67,-180.8 221.67,-180.8"/>
+<text text-anchor="middle" x="184" y="-159.2" font-family="Arial" font-size="12.00">Multi-layer GAT</text>
+</g>
+<!-- Inverse_FFT&#45;&gt;GAT_Layers -->
+<g id="edge5" class="edge">
+<title>Inverse_FFT-&gt;GAT_Layers</title>
+<path fill="none" stroke="black" d="M114.23,-229.76C126.74,-217.94 143.54,-202.06 157.51,-188.84"/>
+<polygon fill="black" stroke="black" points="159.83,-191.47 164.69,-182.06 155.02,-186.38 159.83,-191.47"/>
+</g>
+<!-- Static_Graph -->
+<g id="node6" class="node">
+<title>Static_Graph</title>
+<path fill="lightblue" stroke="black" d="M324.7,-484C324.7,-484 217.3,-484 217.3,-484 211.3,-484 205.3,-478 205.3,-472 205.3,-472 205.3,-459.2 205.3,-459.2 205.3,-453.2 211.3,-447.2 217.3,-447.2 217.3,-447.2 324.7,-447.2 324.7,-447.2 330.7,-447.2 336.7,-453.2 336.7,-459.2 336.7,-459.2 336.7,-472 336.7,-472 336.7,-478 330.7,-484 324.7,-484"/>
+<text text-anchor="middle" x="271" y="-469.2" font-family="Arial" font-size="12.00">Static Graph</text>
+<text text-anchor="middle" x="271" y="-454.8" font-family="Arial" font-size="12.00">(Station Connections)</text>
+</g>
+<!-- Node_Embedding -->
+<g id="node7" class="node">
+<title>Node_Embedding</title>
+<path fill="lightblue" stroke="black" d="M313.37,-411.2C313.37,-411.2 228.63,-411.2 228.63,-411.2 222.63,-411.2 216.63,-405.2 216.63,-399.2 216.63,-399.2 216.63,-387.2 216.63,-387.2 216.63,-381.2 222.63,-375.2 228.63,-375.2 228.63,-375.2 313.37,-375.2 313.37,-375.2 319.37,-375.2 325.37,-381.2 325.37,-387.2 325.37,-387.2 325.37,-399.2 325.37,-399.2 325.37,-405.2 319.37,-411.2 313.37,-411.2"/>
+<text text-anchor="middle" x="271" y="-389.6" font-family="Arial" font-size="12.00">Node Embedding</text>
+</g>
+<!-- Static_Graph&#45;&gt;Node_Embedding -->
+<g id="edge6" class="edge">
+<title>Static_Graph-&gt;Node_Embedding</title>
+<path fill="none" stroke="black" d="M271,-446.84C271,-439.5 271,-430.81 271,-422.64"/>
+<polygon fill="black" stroke="black" points="274.5,-422.74 271,-412.74 267.5,-422.74 274.5,-422.74"/>
+</g>
+<!-- GAT_Static -->
+<g id="node8" class="node">
+<title>GAT_Static</title>
+<path fill="lightblue" stroke="black" d="M320.02,-338.8C320.02,-338.8 221.98,-338.8 221.98,-338.8 215.98,-338.8 209.98,-332.8 209.98,-326.8 209.98,-326.8 209.98,-314.8 209.98,-314.8 209.98,-308.8 215.98,-302.8 221.98,-302.8 221.98,-302.8 320.02,-302.8 320.02,-302.8 326.02,-302.8 332.02,-308.8 332.02,-314.8 332.02,-314.8 332.02,-326.8 332.02,-326.8 332.02,-332.8 326.02,-338.8 320.02,-338.8"/>
+<text text-anchor="middle" x="271" y="-317.2" font-family="Arial" font-size="12.00">Static GAT Encoder</text>
+</g>
+<!-- Node_Embedding&#45;&gt;GAT_Static -->
+<g id="edge7" class="edge">
+<title>Node_Embedding-&gt;GAT_Static</title>
+<path fill="none" stroke="black" d="M271,-374.8C271,-367.47 271,-358.74 271,-350.5"/>
+<polygon fill="black" stroke="black" points="274.5,-350.52 271,-340.52 267.5,-350.52 274.5,-350.52"/>
+</g>
+<!-- Dynamic_Edge_Generation -->
+<g id="node9" class="node">
+<title>Dynamic_Edge_Generation</title>
+<path fill="lightblue" stroke="black" d="M332.37,-266.4C332.37,-266.4 209.63,-266.4 209.63,-266.4 203.63,-266.4 197.63,-260.4 197.63,-254.4 197.63,-254.4 197.63,-241.6 197.63,-241.6 197.63,-235.6 203.63,-229.6 209.63,-229.6 209.63,-229.6 332.37,-229.6 332.37,-229.6 338.37,-229.6 344.37,-235.6 344.37,-241.6 344.37,-241.6 344.37,-254.4 344.37,-254.4 344.37,-260.4 338.37,-266.4 332.37,-266.4"/>
+<text text-anchor="middle" x="271" y="-251.6" font-family="Arial" font-size="12.00">Dynamic Edge Selection</text>
+<text text-anchor="middle" x="271" y="-237.2" font-family="Arial" font-size="12.00">(Similarity-Based)</text>
+</g>
+<!-- GAT_Static&#45;&gt;Dynamic_Edge_Generation -->
+<g id="edge8" class="edge">
+<title>GAT_Static-&gt;Dynamic_Edge_Generation</title>
+<path fill="none" stroke="black" d="M271,-302.66C271,-295.21 271,-286.26 271,-277.84"/>
+<polygon fill="black" stroke="black" points="274.5,-277.99 271,-267.99 267.5,-277.99 274.5,-277.99"/>
+</g>
+<!-- Dynamic_Edge_Generation&#45;&gt;GAT_Layers -->
+<g id="edge9" class="edge">
+<title>Dynamic_Edge_Generation-&gt;GAT_Layers</title>
+<path fill="none" stroke="black" d="M252.55,-229.36C240.24,-217.58 223.87,-201.93 210.22,-188.87"/>
+<polygon fill="black" stroke="black" points="212.87,-186.56 203.22,-182.18 208.03,-191.62 212.87,-186.56"/>
+</g>
+<!-- Decoder -->
+<g id="node11" class="node">
+<title>Decoder</title>
+<path fill="lightblue" stroke="black" d="M225.35,-108.8C225.35,-108.8 142.65,-108.8 142.65,-108.8 136.65,-108.8 130.65,-102.8 130.65,-96.8 130.65,-96.8 130.65,-84 130.65,-84 130.65,-78 136.65,-72 142.65,-72 142.65,-72 225.35,-72 225.35,-72 231.35,-72 237.35,-78 237.35,-84 237.35,-84 237.35,-96.8 237.35,-96.8 237.35,-102.8 231.35,-108.8 225.35,-108.8"/>
+<text text-anchor="middle" x="184" y="-94" font-family="Arial" font-size="12.00">Decoder</text>
+<text text-anchor="middle" x="184" y="-79.6" font-family="Arial" font-size="12.00">(Final Prediction)</text>
+</g>
+<!-- GAT_Layers&#45;&gt;Decoder -->
+<g id="edge10" class="edge">
+<title>GAT_Layers-&gt;Decoder</title>
+<path fill="none" stroke="black" d="M184,-144.4C184,-137.18 184,-128.6 184,-120.47"/>
+<polygon fill="black" stroke="black" points="187.5,-120.6 184,-110.6 180.5,-120.6 187.5,-120.6"/>
+</g>
+<!-- Output -->
+<g id="node12" class="node">
+<title>Output</title>
+<path fill="lightblue" stroke="black" d="M255.38,-36C255.38,-36 112.62,-36 112.62,-36 106.62,-36 100.62,-30 100.62,-24 100.62,-24 100.62,-12 100.62,-12 100.62,-6 106.62,0 112.62,0 112.62,0 255.38,0 255.38,0 261.38,0 267.38,-6 267.38,-12 267.38,-12 267.38,-24 267.38,-24 267.38,-30 261.38,-36 255.38,-36"/>
+<text text-anchor="middle" x="184" y="-14.4" font-family="Arial" font-size="12.00">Output: Predicted Sequence</text>
+</g>
+<!-- Decoder&#45;&gt;Output -->
+<g id="edge11" class="edge">
+<title>Decoder-&gt;Output</title>
+<path fill="none" stroke="black" d="M184,-71.64C184,-64.3 184,-55.61 184,-47.44"/>
+<polygon fill="black" stroke="black" points="187.5,-47.54 184,-37.54 180.5,-47.54 187.5,-47.54"/>
+</g>
+</g>
+</svg>
