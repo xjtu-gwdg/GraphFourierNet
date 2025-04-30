@@ -105,7 +105,7 @@ python main.py --test --data YRB
 
 
 ## Overall Model Flow
-![Model Architecture](assets/model.svg)
+![Model Architecture](assets/model.png)
 
 
 ## Model Interpretability
